@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+        <div ng-repeat="team in vm.team">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>
+                        <img ng-src="{{team.city}}" style="width: 50px;">
+                        {{team.name}}
+                        <img ng-src="{{team.city}}" style="width: 50px;">
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <img id="teamLogo" ng-src="{{team.image}}">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

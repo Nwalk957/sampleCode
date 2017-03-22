@@ -1,0 +1,48 @@
+Steps to creating Single Page Application using Ruby on Rails and Angularjs
+
+1.) install ruby on rails
+2.) install nodejs & bowerjs
+
+3.) add the appropriate gem's to the GemFile
+    - angular-rails-templates
+    - bootstrap-sass
+    - angular-ui-bootstrap-rails
+
+4.) bundle install
+
+5.) create .bowerrc & bower.json file
+
+6.) bower install the appropriate file for front-end
+    - angular
+    - angular-ui-router
+    - angular-bootstrap
+    - bootstrap
+    - jquery
+
+7.) go to app/assets/javascript/application.js to add in the required front-end js files from bowerjs
+    - //= require angular
+    - //= require angular-ui-templates
+    - //= require angular-ui-router
+    - //= require angular-bootstrap
+
+8.) go to app/views/application.html.erb to set default html template
+        - remove the ruby yield tag and replace with angular ui-view tag
+        - add ng-app="app" to html tag
+
+9.) go to app/controllers/application_controller.rb
+        - create index method that will render application.html.erb
+
+10.) go to config/routes.rb to set root route to angular-ui-router
+        - root "application#home"
+
+11.) go to app/assets/javascript
+        - create angular directory to contain all angular code
+        - create needed sub0directories for ex.
+            - controllers --> contains all controllers for each angular route
+            - views --> contains all html files that will be rendered by the angular router
+
+12.) after creating necessary directories, create app.js file in angular-app directory
+
+13.) app.js will contain the app module and state routes for the entire angular front-end
+
+14.) execute rails server command and open localhost:3000 in browser url

@@ -1,0 +1,39 @@
+CREATE TABLE Resumes(
+  id integer primary key not null,
+  content bytea
+);
+
+CREATE TABLE Applicants(
+  id integer primary key not null,
+  name text,
+  email text,
+  phone text,
+  address text,
+  city text,
+  resume_id integer REFERENCES Resumes (id)
+);
+
+CREATE TABLE Positions(
+ id integer primary key not null,
+ name text,
+ department text
+);
+
+CREATE TABLE Postings(
+  id integer primary key not null,
+  name text,
+  description text,
+  start_date Date,
+  finish_date Date,
+  position_id integer REFERENCES Positions (id)
+);
+
+CREATE TABLE Interviews(
+ id integer primary key not null,
+ hired boolean,
+ applicants_id integer REFERENCES Applicants (id),
+ postings_id integer REFERENCES Postings (id)
+);
+
+CREATE USER hgInterview WITH PASSWORD 'pass123' CREATEDB hiringdb;
+grant all privileges on database hiringdb to hgInterview;

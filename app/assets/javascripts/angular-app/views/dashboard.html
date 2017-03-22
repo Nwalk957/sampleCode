@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a ui-sref="dashboard.home" class="navbar-brand">Code Sample</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-left">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: $state.includes('dashboard.home')}"><a ui-sref="dashboard.home">Home</a></li>
+                <li ng-class="{active: $state.includes('dashboard.about')}"><a ui-sref="dashboard.about">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mainContent" class="container">
+    <ui-view></ui-view>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center bg-primary text-white">
+            <h4>This is just a code sample for Ruby on Rails and Angular</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1 col-md-offset-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/ANA_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/ARI_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/BOS_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/BUF_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/CAR_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/CBJ_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/CGY_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/CHI_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/COL_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/DAL_dark.svgz?v=10.23"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-md-offset-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/DET_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/EDM_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/FLA_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/LAK_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/MIN_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/MTL_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/NJD_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/NSH_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/NYI_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/NYR_dark.svgz?v=10.23"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-md-offset-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/OTT_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/PHI_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/PIT_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/SJS_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/STL_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/TBL_light.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/TOR_light.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/VAN_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/WPG_dark.svgz?v=10.23"></div>
+            <div class="col-md-1"><img id="teamLogo" src="http://cdn.nhle.com/logos/nhl/svgz/WSH_dark.svgz?v=10.23"></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
